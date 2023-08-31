@@ -1,19 +1,31 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // ABORDARE PROCEDURALA:
+        Employee e1 = new Employee();
+        e1.name = "John";
+        e1.dob = "13/5/1984";
+        e1.senior = true;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Employee e2 = new Employee();
+        e2.name = "Eva";
+        e2.dob = "25/12/1992";
+        e2.id = 1;
+
+
+        // Valorile default pentru atributele obiectului:
+        System.out.println("ID: " + e1.id); // pentru primtive avem default 0;
+        System.out.println("Name: " + e1.name); // Valoarea deafault este null pentru ca Stringul este Object
+        System.out.println("Date of birth: " + e1.dob); // Valoarea deafault este null pentru ca Stringul este Object
+        System.out.println("Is senior: " + e1.senior); // default pentru boolean este false
+
+        System.out.println("------------");
+
+        System.out.println("ID: " + e2.id);
+        System.out.println("Name: " + e2.name);
+        System.out.println("Date of birth: " + e2.dob);
+        System.out.println("Is senior: " + e2.senior);
     }
 }
